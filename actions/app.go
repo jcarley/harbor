@@ -50,6 +50,7 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 
+		app.POST("/repo/clone", RepoClone)
 	}
 
 	return app
